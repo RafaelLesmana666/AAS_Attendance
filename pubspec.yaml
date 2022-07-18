@@ -1,4 +1,4 @@
-name: attendance
+name: flutter_application_1
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -29,18 +29,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_native_splash: ^1.2.3 
-
-flutter_native_splash:
-  image: assets/splashscreen.jpg
-  android: true
-  ios: true
-  web: true
-
+  http: ^0.13.4
+  loading_animation_widget:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.15
+  barcode_scan2: ^4.2.1
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:
@@ -66,7 +63,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/bg.jpeg
+    - images/logo.png
+  #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
